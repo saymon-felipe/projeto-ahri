@@ -1,0 +1,150 @@
+@font-face {
+	font-family: lolipop;
+	src: local(lolipop), url(fontes/lolipop.ttf)
+}
+
+* {
+    padding: 0;
+    margin: 0; 
+}
+
+/*INÍCIO CABEÇALHO*/
+
+#container-cabecalho {
+    height: 600px;
+    width: auto;
+    background: #fcd2fc url(imagens/ahri1.jpg) no-repeat center top;
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background: rgb(220, 192, 233, 0.5);
+    padding-bottom: 8px
+}
+
+h1#titulo {
+    height: 60px;
+    margin-top: 10px;
+    padding: 0 35px 0 35px;
+    margin-right: 300px;
+    font-family: lolipop, arial;
+    letter-spacing: 4px;
+    color: rgb(86, 0, 97);
+    border-radius: 50px;
+    line-height: 60px;
+}
+
+img#menu {
+    width: 50px;
+    height: 70px;
+    margin-top: 7px;
+    padding-left: 300px;
+}
+
+#lupa {
+    width: 25px;
+    margin-top: 5px;
+}
+
+.search {
+    margin-top: 200px;
+    background-color: white;
+    width: 350px;
+    height: 35px;
+    border-radius: 7px;
+    border: 2px solid black;
+}
+
+input#pesquisar {
+    width: 300px;
+    height: 25px;
+    border: none;
+    position: relative;
+    top: -8px;
+
+}
+
+/*FIM CABEÇALHO*/
+
+/*INÍCIO BODY*/
+
+body {
+    background: rgb(230, 255, 255);
+    display: flex;
+    flex-direction: column;   
+}
+
+#container-principal {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    width: 60%;
+}
+
+.conteudo h1 {
+    padding: 30px 0 15px 0;
+    font-size: 40px;
+}
+
+.conteudo p {
+    width: 350px;
+    padding: 15px 0 30px 0;
+}
+
+.image-section {
+    width: 80%;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+#conteudo-esquerda {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    width: 60%;
+    text-align: right;
+}
+
+#conteudo-esquerda h1 {
+    padding: 30px 0 15px 0;
+    font-size: 40px;
+}
+
+#conteudo-esquerda p {
+    width: 350px;
+    padding: 15px 0 30px 0;
+    margin-left: 40px;
+}
+
+#ahri-animation {
+    width: 10%;
+    position: relative;
+    left: 350px;
+    animation-name: change;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+}
+
+/*FIM BODY*/
+
+/*INÍCIO RODAPÉ*/
+
+
+/*FIM RODAPÉ*/
