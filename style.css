@@ -1,6 +1,6 @@
 @font-face {
 	font-family: lolipop;
-	src: local(lolipop), url(fontes/lolipop.ttf)
+	src: local(lolipop), url(fontes/lolipop.ttf);
 }
 
 * {
@@ -10,16 +10,80 @@
 
 /*INÍCIO CABEÇALHO*/
 
-#container-cabecalho {
+.container {
+    width: 100%;
     height: 600px;
-    width: auto;
-    background: #fcd2fc url(imagens/ahri1.jpg) no-repeat center top;
-    background-attachment: fixed;
     text-align: center;
     display: flex;
     flex-flow: column;
     align-items: center;
+    background: url(imagens/ahri1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+.container1 {
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: url(imagens/ahri2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container2 {
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: url(imagens/ahri3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container3 {
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: url(imagens/ahri4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container4 {
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: url(imagens/ahri5.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container5 {
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: url(imagens/ahri6.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/*SLIDER*/
+
+
+
+/*SLIDER*/
 
 header {
     display: flex;
