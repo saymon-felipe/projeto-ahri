@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="esconderMenu()">
+    <div class="container" id="slider">
+        <header>
+            <a id="titulo" href="index.html">Ahri Kyubinokitsune</a>
+            <div id="menu-principal" onmouseover="mostrarMenu()" onmouseout="esconderMenu()">
+                <img id="menu" src="imagens/menu.png" alt="">
+                <div id="menu-flutuante">
+                    <ul>
+                        <li> <a href="index.html">HOME</a> </li>
+                        <li> <a href="lore.html">LORE</a> </li>
+                        <li> <a href="skins.html">SKINS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="search">
+            <label for="pesquisar"><img id="lupa" src="imagens/lupa.png" alt=""></label>
+            <input type="text" name="pesquisar" id="pesquisar" placeholder="'Me conte um segredo!'">
+        </div>
+    </div>
+    <div id="container-principal">
+        <section id="primeiro" class="conteudo">
+            
+        </section>
+        
+        <div id="animation">
+            <div id="orbe-animation"><img src="imagens/orbe.png" alt=""></div>
+            <div><img id="ahri-animation" src="imagens/ahri-footer.png" alt=""></div>
+        </div>
+    </div>
+    <script src="script.js">
+
+    </script>
+    <footer id="rodape">
+        <h3>&copy; 2021-2021 RabSystems - Todos os direitos reservados.</h3>
+    </footer>
+</body>
+</html>

@@ -149,6 +149,10 @@ input#pesquisar {
 
 }
 
+#menu-flutuante a:hover {
+    color: rgb(218, 0, 199);
+}
+
 #menu-principal {
     padding: 5px 15px 5px 15px;
     display: flex;
@@ -269,6 +273,14 @@ a {
 
 #texto-esquerda p {
     text-align: right;
+}
+
+#texto-lore {
+    text-align: center;
+}
+
+#lore {
+    font-family: lolipop;
 }
 
 #animation {
