@@ -17,7 +17,7 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    background: url(imagens/ahri1.jpg);
+    background: url(imagens/ahri1.jpg) no-repeat center top;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -29,7 +29,7 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    background: url(imagens/ahri2.jpg);
+    background: url(imagens/ahri2.jpg) no-repeat center top;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -40,7 +40,7 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    background: url(imagens/ahri3.jpg);
+    background: url(imagens/ahri3.jpg) no-repeat center top;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -51,7 +51,7 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    background: url(imagens/ahri4.jpg);
+    background: url(imagens/ahri4.jpg) no-repeat center top;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -62,7 +62,7 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    background: url(imagens/ahri5.jpg);
+    background: url(imagens/ahri5.jpg) no-repeat center top;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -73,43 +73,35 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    background: url(imagens/ahri6.jpg);
+    background: url(imagens/ahri6.jpg) no-repeat center top;
     background-size: cover;
     background-attachment: fixed;
 }
 
-
-/*SLIDER*/
-
-
-
-/*SLIDER*/
-
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+    height: 80px;
     background: rgb(220, 192, 233, 0.5);
-    padding-bottom: 8px
+    padding-bottom: 8px;
+    align-content: center;
 }
 
-h1#titulo {
-    height: 60px;
-    margin-top: 10px;
-    padding: 0 35px 0 35px;
-    margin-right: 300px;
+a#titulo {
+    margin-left: 5%;
     font-family: lolipop, arial;
+    font-size: 2em;
     letter-spacing: 4px;
     color: rgb(86, 0, 97);
-    border-radius: 50px;
-    line-height: 60px;
+    cursor: pointer;
 }
 
 img#menu {
     width: 50px;
     height: 70px;
-    margin-top: 7px;
-    padding-left: 300px;
+    margin-left: 20px;
 }
 
 #lupa {
@@ -135,6 +127,36 @@ input#pesquisar {
 
 }
 
+#menu-flutuante {
+    margin-top: 40px;
+    padding: 5px 15px 5px 15px;
+    background: rgb(220, 192, 233);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgb(136, 30, 131);    
+}
+
+#menu-flutuante ul {
+    list-style-type: none;
+}
+
+#menu-flutuante a {
+    text-decoration: none;
+    color: rgb(86, 0, 97);
+    font-family: lolipop, arial;
+    letter-spacing: 4px;
+    font-size: 30px;
+    padding-bottom: 5px;
+
+}
+
+#menu-principal {
+    padding: 5px 15px 5px 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-right: 5%;
+}
+
 /*FIM CABEÇALHO*/
 
 /*INÍCIO BODY*/
@@ -142,7 +164,15 @@ input#pesquisar {
 body {
     background: rgb(230, 255, 255);
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
+     
+}
+
+a.leia-mais {
+    text-decoration: none;
+    padding: 20px;
+    background: rgb(87, 3, 104);
+    color: #fff;
 }
 
 #container-principal {
@@ -154,11 +184,13 @@ body {
 }
 
 .conteudo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    background: #fff url(imagens/serapacao-sections.jpg) repeat-x top;
+    width: 80%;
+    padding: 30px 0 30px 0;
+}
+
+#primeiro {
     background: #fff;
-    width: 60%;
 }
 
 .conteudo h1 {
@@ -167,8 +199,7 @@ body {
 }
 
 .conteudo p {
-    width: 350px;
-    padding: 15px 0 30px 0;
+    padding: 15px 0 15px 0;
 }
 
 .image-section {
@@ -177,38 +208,118 @@ body {
     border-radius: 20px;
 }
 
-#conteudo-esquerda {
+.container-interno {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    margin: auto;
+    justify-content: center;
     align-items: center;
-    background: #fff;
-    width: 60%;
+}
+
+#container-esquerda {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+a#leia-mais {
+    text-decoration: none;
+    padding: 10px;
+    background: rgb(87, 3, 104);
+    color: #fff;
+    width: 100px;
+    text-align: center;
+}
+
+a#leia-mais-section3 {
+    text-decoration: none;
+    padding: 10px;
+    background: rgb(87, 3, 104);
+    color: #fff;
+    width: 160px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 55%;
+}
+
+#texto-esquerda {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    align-items: flex-end
+}
+
+#texto-esquerda h1 {
     text-align: right;
 }
 
-#conteudo-esquerda h1 {
-    padding: 30px 0 15px 0;
-    font-size: 40px;
+#texto-esquerda p {
+    text-align: right;
 }
 
-#conteudo-esquerda p {
-    width: 350px;
-    padding: 15px 0 30px 0;
-    margin-left: 40px;
+#animation {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    width: 80%;
 }
 
 #ahri-animation {
-    width: 10%;
-    position: relative;
-    left: 350px;
-    animation-name: change;
-    animation-duration: 24s;
-    animation-iteration-count: infinite;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: -1000px;
 }
+
+#orbe-animation {
+    position: relative;
+    left: -750px;
+    animation-duration: 3s;
+    animation-name: deslizar;
+    animation-iteration-count: infinite; 
+}
+
+@keyframes deslizar{
+    0% {
+        left: -750px;
+    } 50% {
+        left: -80px;
+    } 100% {
+        left: -750px;
+    }
+}
+
+#orbe-animation img {
+    width: 90px;
+    margin-top: 40px;
+}
+
+
 
 /*FIM BODY*/
 
 /*INÍCIO RODAPÉ*/
 
+#rodape {
+    background: #000;
+    color: #fff;
+    font-family: arial;
+    margin-top: 30px;
+    padding: 30px 0 30px 0;
+    text-align: center;
+}
 
 /*FIM RODAPÉ*/

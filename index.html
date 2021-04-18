@@ -7,11 +7,20 @@
     <title></title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="esconderMenu()">
     <div class="container" id="slider">
         <header>
-            <h1 id="titulo">Ahri Kyubinokitsune</h1>
-            <img id="menu" src="imagens/menu.png" alt="">
+            <a id="titulo" href="index.html">Ahri Kyubinokitsune</a>
+            <div id="menu-principal" onmouseover="mostrarMenu()" onmouseout="esconderMenu()">
+                <img id="menu" src="imagens/menu.png" alt="">
+                <div id="menu-flutuante">
+                    <ul>
+                        <li> <a href="index.html">HOME</a> </li>
+                        <li> <a href="lore.html">LORE</a> </li>
+                        <li> <a href="skins.html">SKINS</a></li>
+                    </ul>
+                </div>
+            </div>
         </header>
         <div class="search">
             <label for="pesquisar"><img id="lupa" src="imagens/lupa.png" alt=""></label>
@@ -19,42 +28,52 @@
         </div>
     </div>
     <div id="container-principal">
-        <section class="conteudo">
-            <div id="imagem">
-                <img class="image-section"src="imagens/ahri-section3.jpg" alt="">
-            </div>
-            <div>
-                <h1>Ahri LORE</h1>
-                <p>
-                    Com uma conexão inata com o poder latente de Runeterra, Ahri é uma vastaya capaz de transformar magia em orbes de pura energia. Ela gosta de brincar com suas presas manipulando suas emoções antes de devorar suas essências vitais. Apesar de sua natureza predatória, Ahri conserva um senso de empatia ao receber flashes de memória das almas que ela consome.
-                </p>
-                <a href="lore.html">LEIA MAIS</a>
-            </div>
-        </section>
-        <section id="conteudo-esquerda">
-            <div>
-                <h1>Ahri KDA/ALL OUT</h1>
-                <p>
-                    A Ahri faz parte de um grupo musical de K-POP chamado KDA, composto por ela, Akali, Evellyn, Kai'sa e Seraphine. <strong>Ahri KDA/ALL OUT</strong> é a melhor skin da ahri até o momento (depois de Ahri Guardiã Estelar e Ahri Fliperama).
-                </p>
-            </div>
-            <div id="imagem">
-                <img class="image-section"src="imagens/ahri-section2.jpg" alt="">
+        <section id="primeiro" class="conteudo">
+            <div class="container-interno">
+                <div>
+                    <img class="image-section" src="imagens/ahri-section3.jpg" alt="" onmouseover="destaque()" onmouseout="normal()">
+                </div>
+                <div class="texto">
+                    <h1>Ahri<br>Lore</h1>
+                    <p>
+                        Com uma conexão inata com o poder latente de Runeterra, Ahri é uma vastaya capaz de transformar magia em orbes de pura energia. Ela gosta de brincar com suas presas manipulando suas emoções antes de devorar suas essências vitais. Apesar de sua natureza predatória, Ahri conserva um senso de empatia ao receber flashes de memória das almas que ela consome.
+                    </p>
+                    <a id="leia-mais" href="https://br.leagueoflegends.com/pt-br/champions/ahri/">LEIA MAIS</a>
+                </div>
             </div>
         </section>
         <section class="conteudo">
-            <div id="imagem">
-                <img class="image-section"src="imagens/ahri-section1.jpg" alt="">
-            </div>
-            <div>
-                <h1>Ahri<br>Kyūbinokitsune</h1>
-                <p>
-                    Ahri é a melhor campeã do jogo <a href="https://na.leagueoflegends.com/pt-br/">League of Legends</a> (popularmente chamado de LOL), ela exerce a função de Mago/Assassino na rota meio ou Mid como os jogadores costumam chamar.
-                </p>
+            <div id="container-esquerda">
+                <div>
+                    <img class="image-section"src="imagens/ahri-section2.jpg" alt="">
+                </div>
+                <div id="texto-esquerda">
+                    <h1>Ahri<br>KDA/ALL OUT</h1>
+                    <p>
+                        A skin da linha K/DA de Ahri, retrata a personagem como ela aparece na banda, está disponível para compra no LOL. A skin <strong>Prestígio</strong> está disponível apenas ao completar missões especiais no jogo. A popularidade da K/DA levou a Riot Games a confirmar que o conteúdo adicional da K/DA seria introduzido no League of Legends em 2019.
+                    </p>
+                    <a id="leia-mais" href="https://br.leagueoflegends.com/pt-br/event/kda-official-fan-club/">LEIA MAIS</a>
+                </div>
             </div>
         </section>
-        <div id="orbe"><img src="" alt=""></div>
-        <div><img id="ahri-animation" src="imagens/ahri.png" alt=""></div>
+        <section class="conteudo">
+            <div class="container-interno">
+                <div>
+                    <img class="image-section"src="imagens/ahri-section1.jpg" alt="">
+                </div>
+                <div class="texto">
+                    <h1>EVX Rabudinha</h1>
+                    <p>
+                        Olá, meu nome é Saymon Felipe, conhecido dentro do LOL como EVX Rabudinha. Minha principal campeã é: Adivinha??? Se disse Ahri acertou!<br><br>Sou dono e capitão do time <strong>EVX El-Vortex</strong>, que foi criado para disputar campeonatos amadores e partidas amistosas com outros times.
+                    </p>
+                    <a id="leia-mais-section3" href="#">CONHEÇA A EVX</a>
+                </div>
+            </div>
+        </section>
+        <div id="animation">
+            <div id="orbe-animation"><img src="imagens/orbe.png" alt=""></div>
+            <div><img id="ahri-animation" src="imagens/ahri-footer.png" alt=""></div>
+        </div>
     </div>
     <script src="script.js">
 

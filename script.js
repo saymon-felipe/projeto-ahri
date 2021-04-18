@@ -1,4 +1,14 @@
 var container = document.getElementById("slider")
+var menu = document.getElementById("menu-flutuante")
+var imagens = document.getElementsByClassName("image-section")
+
+function mostrarMenu() {
+    menu.style.display = "block"
+}
+
+function esconderMenu() {
+    menu.style.display = "none"
+}
 
 function changeImage() {
     if (container.classList == "container") {
