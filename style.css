@@ -275,8 +275,13 @@ a {
     text-align: right;
 }
 
-#texto-lore {
+.texto-lore {
     text-align: center;
+}
+
+.texto-lore p {
+    width: 80%;
+    margin: auto;
 }
 
 #lore {
