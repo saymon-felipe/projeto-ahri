@@ -296,14 +296,14 @@ a {
 }
 
 #ahri-animation {
-    width: 200px;
-    margin-top: 20px;
-    margin-left: -1000px;
+    width: 40%;
+    margin-top: 10%;
+    margin-left: -200%;
 }
 
 #orbe-animation {
     position: relative;
-    left: -750px;
+    left: -20%;
     animation-duration: 3s;
     animation-name: deslizar;
     animation-iteration-count: infinite; 
@@ -311,16 +311,16 @@ a {
 
 @keyframes deslizar{
     0% {
-        left: -750px;
+        left: -75%;
     } 50% {
-        left: -80px;
+        left: -8%;
     } 100% {
-        left: -750px;
+        left: -75%;
     }
 }
 
 #orbe-animation img {
-    width: 90px;
+    width: 250%;
     margin-top: 40px;
 }
 
